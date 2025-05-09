@@ -60,6 +60,8 @@
             stateVersion = "24.11";
           };
 
+          services.openssh.enable = false;
+
           nixpkgs.config.allowUnfree = true;
           system.stateVersion = "24.11";
         })
