@@ -53,6 +53,10 @@
           hm.home = {
             username = user;
             homeDirectory = "/home/${user}";
+            packages = with pkgs; [
+              lazygit
+              dysk
+            ];
             stateVersion = "24.11";
           };
 
